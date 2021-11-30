@@ -39,7 +39,9 @@ taką, że `rep a` daje strumień złozony z samych `a`
 nats :: Stream Integer
 ```
 
-* Zdefiniuj instancje `Functor` i `Applicative` dla `Stream`
+* Zdefiniuj instancje `Functor` i `Applicative` dla `Stream`. Upewnij się że `show (pure (*2) <*> nats) == show (fmap (*2) nats)`
+* Bonus: zdefiniuj funkcję `zipStreamsWith :: (a->b->c) -> Stream a -> Stream b -> Stream c`. Czy potrafisz zdefiniować `(<*>)` w terminach tej funkcji?
+
 
 ## Supply
 
