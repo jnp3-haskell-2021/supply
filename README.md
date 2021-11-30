@@ -91,6 +91,9 @@ mapSupply2 :: (a->b->c) -> Supply s a -> Supply s b -> Supply s c
 bindSupply :: Supply s a -> (a->Supply s b) -> Supply s b
 ```
 
+Przy czym `fmap f x` używa tych samych zasobów co `x`, 
+natomiast `x <*> y` i  `x >> y` używa takich zasobów jak kolejno `x` i `y`.
+
 Wreszcie, będziemy potrzebowali wyłuskać wynik obliczenia korzystającego z zasobu; zdefiniuj
 
 
