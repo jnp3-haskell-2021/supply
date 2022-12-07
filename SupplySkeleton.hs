@@ -11,7 +11,7 @@ instance Show a => Show (Stream  a) where
   show = undefined
 
 rep :: a -> Stream a
-rep a = a :> rep a
+rep a = undefined
 
 -- | Example:
 --
