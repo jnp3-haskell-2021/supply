@@ -16,7 +16,7 @@ rep a = undefined
 -- | Example:
 --
 -- >>> rep 0
--- 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0...
+-- 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,...
 
 from :: Integer -> Stream Integer
 from n = undefined
